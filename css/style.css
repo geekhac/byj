@@ -1,0 +1,306 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+@font-face{
+  font-family: xinQingNian;
+  src: url('font/xinQingNian.otf');
+}
+body {
+  font-size: 100%;
+  font-family: xinQingNian;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  height: 31px;
+}
+
+div#loadingAni{
+  position: absolute;
+  top: 49%;
+  left: 22.5%;
+  height: 1.3rem;
+  overflow: hidden;
+
+}
+div#loadingAni p{
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.3rem;
+  width: 600px;
+
+}
+
+div.tips{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-color: rgba(0,0,0,0.6);
+  z-index:1;
+  overflow: :hidden;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+div#tip1 button{
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  transform:rotate(0deg) skew(0deg,0deg);
+  background-color: rgb(22,154,229);
+  font-family: xinQingNian;
+  color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.7rem;
+  width: 170px;
+  height: 40px;
+
+}
+
+div#tip1 p{
+  position:absolute;
+
+}
+
+#tip1 .p1{
+  text-align: center;
+  top:25%;
+  width: 100%;
+}
+
+#tip1 .p2{
+  text-align: right;
+  top: 42%;
+  right: 18%;
+}
+
+#tip1 img{
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  width: 20%;
+}
+
+#tip2 p{
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  width: 100%;
+}
+
+#tip2 img{
+  position: absolute;
+  transform:rotate(-30deg) skew(0deg,0deg);
+  top:-3%;
+  right:0%;
+  width: 30%;
+}
+
+
+
+.table{
+  display:table;
+  width:82%;
+  height: 10%;
+  margin: 0 auto;
+}
+.tableRow{
+  display: table-row;
+}
+.tableCell{
+  display: table-cell;
+  padding-bottom: 3%;
+}
+.loading {
+  background-image: url('../imgs/Loading.png');
+}
+.first {
+  background-image: url('../imgs/first.png');
+}
+.first .begin{
+  position: absolute;
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  top: 80%;
+  left: 80%;
+}
+.slide {
+  position: relative;
+  background-size: 100% 100%;
+}
+.slide .u-qa,.slide .d-qa {
+  position: absolute;
+}
+.slide button{
+  display: inline-block;
+  position: relative;
+  transform:rotate(0deg) skew(-21.5deg,0deg);
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 1.4rem;
+  margin: 3px 5px;
+  min-width: 100px;
+}
+
+.slide button .bac{
+  position: absolute;
+  display: inline-block;
+  top:4px;
+  left: -4px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+.slide .choiBtn .wrong {
+  background-color:#d0021b;
+}
+.slide .choiBtn .right {
+  background-color:#569908;
+}
+.slide button .txt{
+  font-family: xinQingNian,sans-serif;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  position: relative;
+  top: 5px;
+  left: -5px;
+  display: inline-block;
+  transform:skew(-155deg,-180deg);
+  color: #fff;
+  line-height: 12.5px;
+}
+
+.last p{
+  position: absolute;
+}
+
+span.rigPer{
+  position: absolute;
+  font-size:1.3rem;
+  top:70%;
+  left: 6%;
+}
+
+p.dear{
+  font-size: 1.5rem;
+  top: 12%;
+  left: 11%;
+}
+
+p.adj{
+  width: 100%;
+  text-align: center;
+  font-size:4rem;
+  top: 18%;
+}
+p.noun{
+  width: 100%;
+  text-align: center;
+  font-size:4rem;
+  top: 30%;
+}
+
+div.result_btn{
+  position: absolute;
+  width: 90%;
+  top: 85%;
+  left: 5%;
+}
+
+
+.last .result_btn button{
+   height: 32px;
+}
+
+.last .result_btn button.share{
+   float:right;
+}
+
+.first canvas{
+  position: absolute;
+  top: 73.3%;
+  left: 69.2%;
+}
+
+.u-qa,.d-qa {
+  left: 12%;
+}
+.page1 .u-qa,.page4 .u-qa,.page5 .u-qa,.page8 .u-qa,.page9 .u-qa{
+  top: 18%;
+}
+
+.page7 .u-qa{
+  top: 15%;
+}
+.page2 .u-qa,.page3 .u-qa{
+  top: 16%;
+}
+.page6 .u-qa{
+  top: 19%;
+}
+
+.page3 .d-qa,.page5 .d-qa,.page9 .d-qa{
+  top: 70%;
+}
+.page2 .d-qa,.page4 .d-qa,.page8 .d-qa{
+  top: 63%;
+}
+.page5 .d-qa{
+  top: 56%;
+}
+.page1 .d-qa{
+  top:68%;
+}
+.page6 .d-qa{
+  top: 61%;
+}
+
+.page7 .d-qa{
+  top:65%;
+}
+
+.page9 .submit{
+  position: absolute;
+  top: 80%;
+  left: 37%;
+}
+
+.page2 .u-qa .txt,.page4 .d-qa .choi3 .txt,.page5 .d-qa .choi0 .txt{
+    font-size: 1.2rem;
+}
+
+.page6 .u-qa .choi0 .txt,.page6 .u-qa .choi2 .txt,.page7 .d-qa .choi1 .txt,
+.page5 .d-qa .choi2 .txt,.page5 .d-qa .choi1 .txt,.page6 .d-qa .choi1 .txt,
+.page6 .d-qa .choi2 .txt{
+  font-size: 0.8rem;
+}
+
+
+
+.page5 .u-qa .choi1 .txt,.page5 .u-qa .choi3 .txt,.page6 .u-qa .choi1 .txt,.page6 .u-qa .choi3 .txt,
+.page6 .d-qa .choi0 .txt,.page6 .d-qa .choi3 .txt{
+  font-size: 0.4rem;
+}
+.page5 .u-qa .choi2 .txt,.page7 .u-qa .choi2 .txt{
+  font-size: 1rem;
+}
+
+
+.page6 .d-qa .choi0 .txt,.page6 .d-qa .choi3 .txt,.page6 .u-qa .choi1 .txt,.page5 .u-qa .choi1 .txt{
+  max-width: 5.5rem;
+}
+
+.page7 .d-qa .choi1 .txt{
+  max-width: 4rem;
+
+}
+
+.last {
+  background-image: url('../imgs/1.png');
+}
